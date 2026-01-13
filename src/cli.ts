@@ -18,10 +18,10 @@
  * under the License.
  */
 
-import { generateDesignSystem } from './generator.js';
-import chalk from 'chalk';
+import { generateDesignSystem } from "./generator.js";
+import chalk from "chalk";
 
-console.log(chalk.blue.bold('\n🎨 Design System Generator\n'));
+console.log(chalk.blue.bold("\n🎨 Design System Generator\n"));
 
 // Get the current working directory (where the user ran the command)
 const targetDir = process.cwd();
@@ -29,16 +29,16 @@ const targetDir = process.cwd();
 generateDesignSystem(targetDir)
   .then(() => {
     console.log(
-      chalk.green.bold('\n✅ Design system files generated successfully!\n')
+      chalk.green.bold("\n✅ Design system files generated successfully!\n")
     );
-    console.log(chalk.cyan('Files created:'));
-    console.log(chalk.gray('  - src/styles/design-tokens.json'));
-    console.log(chalk.gray('  - src/styles/fonts.css'));
-    console.log(chalk.gray('  - src/theme.ts\n'));
+    console.log(chalk.cyan("Files created:"));
+    console.log(chalk.gray("  - src/styles/design-tokens.json"));
+    console.log(chalk.gray("  - src/styles/fonts.css"));
+    console.log(chalk.gray("  - src/theme.ts\n"));
   })
   .catch((error: Error) => {
     console.error(
-      chalk.red.bold('\n❌ Error generating design system files:\n')
+      chalk.red.bold("\n❌ Error generating design system files:\n")
     );
     console.error(chalk.red(error.message));
     process.exit(1);
