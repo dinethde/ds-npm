@@ -1,6 +1,6 @@
 {
   "name": "@dinethde/ds",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Auto-generate design tokens, fonts.css, and theme.ts files for your project",
   "type": "module",
   "main": "./dist/generator.js",
