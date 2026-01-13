@@ -6,7 +6,7 @@
   "main": "./dist/generator.js",
   "types": "./dist/generator.d.ts",
   "bin": {
-    "generate-ds": "./dist/cli.js"
+    "generate-ds": "dist/cli.js"
   },
   "scripts": {
     "build": "tsc",
@@ -27,7 +27,7 @@
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/dinethde/ds-npm.git"
+    "url": "git+https://github.com/dinethde/ds-npm.git"
   },
   "files": [
     "dist",
