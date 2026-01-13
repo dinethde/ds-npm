@@ -1,0 +1,11 @@
+# Ignore source files not needed in the published package
+resources/
+test/
+.git/
+.gitignore
+*.log
+node_modules/
+.DS_Store
+.env
+.vscode/
+.idea/
