@@ -1,19 +1,19 @@
-// Copyright (c) 2025 WSO2 LLC. (https://www.wso2.com).
-//
-// WSO2 LLC. licenses this file to you under the Apache License,
-// Version 2.0 (the "License"); you may not use this file except
-// in compliance with the License.
-// You may obtain a copy of the License at
-//
-// http://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing,
-// software distributed under the License is distributed on an
-// "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-// KIND, either express or implied.  See the License for the
-// specific language governing permissions and limitations
-// under the License.
-// MUI Import
+/* Copyright (c) 2026 WSO2 LLC. (https://www.wso2.com).
+
+WSO2 LLC. licenses this file to you under the Apache License,
+Version 2.0 (the "License"); you may not use this file except
+in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied.  See the License for the
+specific language governing permissions and limitations
+under the License. */
+
 import { type PaletteMode, alpha } from "@mui/material";
 
 import designTokens from "./styles/design-tokens.json";
@@ -36,7 +36,7 @@ const extractColors = () => {
         acc[key] = cleanHexColor(token.value);
         return acc;
       },
-      {} as Record<string, string>,
+      {} as Record<string, string>
     ),
 
     primary: Object.entries(variables.colors.primary).reduce(
@@ -44,7 +44,7 @@ const extractColors = () => {
         acc[key] = cleanHexColor(token.value);
         return acc;
       },
-      {} as Record<string, string>,
+      {} as Record<string, string>
     ),
 
     secondary: Object.entries(variables.colors.secondary).reduce(
@@ -52,7 +52,7 @@ const extractColors = () => {
         acc[key] = cleanHexColor(token.value);
         return acc;
       },
-      {} as Record<string, string>,
+      {} as Record<string, string>
     ),
   };
 };
@@ -96,12 +96,28 @@ export const tokens = (mode: PaletteMode) => {
               p4: { active: colors.neutral["1300"], hover: "#ffffff" },
             },
             secondary: {
-              p1: { active: colors.secondary["900"], hover: "#FF6A0096", disabled: "#ff730096" },
-              p2: { active: colors.secondary["1000"], hover: "#FF6A0096", disabled: "#ff730096" },
+              p1: {
+                active: colors.secondary["900"],
+                hover: "#FF6A0096",
+                disabled: "#ff730096",
+              },
+              p2: {
+                active: colors.secondary["1000"],
+                hover: "#FF6A0096",
+                disabled: "#ff730096",
+              },
             },
             brand: {
-              p1: { active: colors.primary["1200"], hover: "#FF6A0096", disabled: "#ff730096" },
-              p2: { active: colors.primary.main, hover: "#FF6A0096", disabled: "#ff73005c" },
+              p1: {
+                active: colors.primary["1200"],
+                hover: "#FF6A0096",
+                disabled: "#ff730096",
+              },
+              p2: {
+                active: colors.primary.main,
+                hover: "#FF6A0096",
+                disabled: "#ff73005c",
+              },
             },
           },
 
@@ -220,12 +236,28 @@ export const tokens = (mode: PaletteMode) => {
               p4: { active: colors.neutral["700"], hover: "#FFFFFF" },
             },
             secondary: {
-              p1: { active: colors.secondary["800"], hover: "#FFFFFF", disabled: "#FFFFFF" },
-              p2: { active: colors.secondary.main, hover: "#FFFFFF", disabled: "#FFFFFF" },
+              p1: {
+                active: colors.secondary["800"],
+                hover: "#FFFFFF",
+                disabled: "#FFFFFF",
+              },
+              p2: {
+                active: colors.secondary.main,
+                hover: "#FFFFFF",
+                disabled: "#FFFFFF",
+              },
             },
             brand: {
-              p1: { active: colors.primary["1100"], hover: "#FFFFFF", disabled: "#ff730096" },
-              p2: { active: colors.neutral.white, hover: "#FF6A0096", disabled: "#ffffff96" },
+              p1: {
+                active: colors.primary["1100"],
+                hover: "#FFFFFF",
+                disabled: "#ff730096",
+              },
+              p2: {
+                active: colors.neutral.white,
+                hover: "#FF6A0096",
+                disabled: "#ffffff96",
+              },
             },
           },
 
@@ -776,7 +808,8 @@ export const themeSettings = (mode: PaletteMode) => {
             padding: "6px 8px",
             borderRadius: "4px",
             fontSize: "12px",
-            boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.16), 0px 0px 2px rgba(0, 0, 0, 0.08)",
+            boxShadow:
+              "0px 4px 8px rgba(0, 0, 0, 0.16), 0px 0px 2px rgba(0, 0, 0, 0.08)",
           },
           arrow: {
             color: colors.neutral["1700"],
